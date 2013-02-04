@@ -7,121 +7,99 @@ body {
   margin: -16px 0 0 -1px;
   font-family: "Helvetica", Arial;
   background-color: $gray;
-
 }
 
 #content header{
   height:150px;
-
 }
 
 #logo{
-  background: url(../img/logos.png) no-repeat;
+  background: url(logos.png) no-repeat;
   float:left;
   text-align:left;
   width:130px;
   height:130px;
   overflow: hidden;
   margin-bottom: 20px;
-
 }
 #socials{
   display: block;
 
   margin: -40px 0 0 875px;
   //float: right;
-  //  height: 45px;
-  //    width: 90px;
-  //    
+  height: 45px;
+  width: 90px;
 }
 #social{
   float: left;
-  background: url(../img/fancy-links.png) no-repeat;
+  background: url(fancy-links.png) no-repeat;
   width:45px;
   height:45px;
   overflow: hidden;
-
 }
 
 #rss{
-  background: url(../img/fancy-links.png) no-repeat;
+  background: url(fancy-links.png) no-repeat;
   float: left;
   width:40px;
   height:45px;
   overflow: hidden;
   background-position: -45px 0;
-
 }
 
 #menu{ 
-  background: url(../img/divider.png) no-repeat;
+  background: url(divider.png) no-repeat;
   background-position: bottom;
   text-align: left;
   margin: 0 0 0 40px;
   ul li{
     margin: 75px 10px 0 30px;
-
   }
-
 }
 
 #content {
   height: auto;
   margin: $center;
-  background: url(../img/textture.png);
-
+  background: url(textture.png);
 }
 
 #top-content {
   color: #fff;
-
 }
 
 .center-content{
   width:960px;
   margin:$center;
   padding: 30px;
-
 }
 
 
 #menu ul li, #header-social li, .avatars li  {
-  display:inline-block;
-  cursor:pointer;
-
-}
-
-
-#slider{
-
+  display: inline-block;
+  cursor: pointer;
 }
 
 
 ul li figure {
   text-align:left;
   margin: 0 auto 0 auto;
-
 }
 
 #main-content{
   background-color:white;
-
 }
 #text-area {
   width:960px;
   margin:$center;
-
 }
 
 .text-title {
-  background: url(../img/divider.png) no-repeat;
+  background: url(divider.png) no-repeat;
   background-position: bottom;
-
 }
 
 #text-section{
   height: 450px;
-
 }
 
 #section-left{
@@ -129,7 +107,6 @@ ul li figure {
   position: relative;
   text-align: left;
   width: 470px;
-
 }
 
 #section-right{
@@ -138,17 +115,14 @@ ul li figure {
   text-align: left;
   width: 470px;
   margin: -390px 480px;
-
 }
 
 #button1{
   margin: 400px 480px;
-
 }  
 
 #button2{
   margin: 50px 400px;
-
 }  
 
 .gray-area{
@@ -158,13 +132,11 @@ ul li figure {
   font-weight: bold;
   position:relative;
   -webkit-border-radius: 5px;
-
 }
 
 .gray-button {
   padding: 5px 80px 6px 80px;
   display:inline-block;
-
 }
 
 #twitter-foot{
@@ -173,7 +145,6 @@ ul li figure {
   text-align: center;
   display:block;
   -webkit-border-radius: 5px;
-
 }
 
 
@@ -182,17 +153,78 @@ ul li figure {
   height:27px;
   float: left;
   margin-top: 10px;
-  background: url(../img/twitter-bird.png);
-
+  background: url(twitter-bird.png);
 }
 
 #main-articles {
-  margin: 100px auto;
+margin: 100px auto; }
+
+
+#section-articles {
+  width: 900px;
+}
+
+#section-articles .img-articles {
+  margin: 5px 0 0 0;
+  float: left;
+  width: 140px;
+  height: 110px;
+  background-color: red;
+}
+
+.title-articles, .text-articles {
+  margin-left: 160px;
+  width: 660px;
+}
+.img2-articles{
+  background: url(fancy-links.png) no-repeat;
+  width: 42px;
+  height: 40px;
+  margin-top: -80px;
+  float: right;
+  background-position: -84px;
+}
+
+#logo-foot {
+  background: url(logo_footter.png) no-repeat;
+  height: 80px;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+#footer-text {
+  float:left;
+  height: 140px;
+  width: 420px;
+  margin: 0 auto;
 
 }
 
-//#section-articles ul li::before {
-//content: url (../img/placeholder-avatar-small.png);
-    ////}
-    //
-    //}
+#footer-social{
+  float:left;
+  height: 140px;
+  width: 480px;
+  margin:0 auto;
+}
+
+#foot-content{
+  height: 140px;
+  width: 900px;
+  margin:0 auto;
+}
+#copy{
+  background:#444 ;
+  height:30px;
+  width:900px;
+  margin:0 auto;
+  margin-top:50px;
+}
+
+footer {
+  color:#999;
+  height:500px;
+  line-height:30px;
+  font-size:13px;
+}
