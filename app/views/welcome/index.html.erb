@@ -34,35 +34,18 @@
             </div>
             <div id="section-articles">
 
-              <div class="img-articles">
-              </div>
-              <h2 class="title-articles">Title Article 1</h2>
-              <article class="text-articles"><p>That request which your computer sends to the web server contains all sorts of (potentially) interesting information. We'll now examine the HTTP request your computer just sent to this web server, see what it contains, and find out what it tells me about you.</p></article>
-              <a href="#">
-                <div class="img2-articles">
+              <% @articles.each do |article| %>
+                <div class="img-articles">
                 </div>
-              </a>
-
-              <div class="img-articles">
-              </div>
-              <h2 class="title-articles">Title Article 2</h2>
-              <article class="text-articles"><p>That request which your computer sends to the web server contains all sorts of (potentially) interesting information. We'll now examine the HTTP request your computer just sent to this web server, see what it contains, and find out what it tells me about you.</p></article>
-              <a href="#">
-                <div class="img2-articles">
-                </div>
-              </a>
-
-              <div class="img-articles">
-              </div>
-              <h2 class="title-articles">Title Article 3</h2>
-              <article class="text-articles"><p>That request which your computer sends to the web server contains all sorts of (potentially) interesting information. We'll now examine the HTTP request your computer just sent to this web server, see what it contains, and find out what it tells me about you.</p></article>
-              <a href="#">
-                <div class="img2-articles">
-                </div>
-              </a>
-
+                <h2 class="title-articles"><%= article.title %></h2>
+                <article class="text-articles"><p><%= article.content %></p></article>
+                <a href="#">
+                  <div class="img2-articles">
+                  </div>
+                </a>
+              <% end %>
             </div>
-            <a href="#">
+            <a href="/articles">
               <div id="button2" class="gray-button gray-area">
                 More Articles
               </div>
