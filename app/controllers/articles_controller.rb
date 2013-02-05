@@ -1,17 +1,22 @@
 class ArticlesController < ApplicationController
   def index
-    @articles= Articles.all
+    @articles= Article.all
+    respond_to do |format|
+      format.html
+    end
   end
 
   def new
-    @articles= Articles.new
-    # @articles= Articles.all
+    @article= Article.new
+    respond_to do |format|
+      format.html
+    end
   end
 
   def create
-    @articles= Articles.new(params[:article])
+    @article= Article.new(params[:article])
     respond_to do |format|
-      if @articles.save
+      if @article.save
         format.html {redirect_to articles_path}
       else
         format.html {render action: "new"}
@@ -20,13 +25,13 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @articles = Articles.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def update
-    @articles = Articles.find(params[:id])
+    @article = Article.find(params[:id])
     respond_to do |format|
-      if @articles.update_atributes(params[:articles])
+      if @article.update_atributes(params[:articles])
         format.html {redirect_to articles_path}
       else
         format.html {render action: "edit"}
@@ -35,13 +40,14 @@ class ArticlesController < ApplicationController
   end
 
   def destroy 
-    @articles = Articles.find(params[:id])
+    @article = Article.find(params[:id])
     respond_to do |format|
-      if @articles.destroy
+      if @article.destroy
         format.html {redirect_to articles_path}
       else
         format.html {redirect_to articles_path}
       end
     end
   end
+
 end

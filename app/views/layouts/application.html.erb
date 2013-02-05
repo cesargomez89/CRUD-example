@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-  <title>CRUDExample</title>
+  <title>CRUD-Example</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= link_to "Index", root_path %>
+  <%= link_to "Articles", articles_path %>
 
     <div id="content">
       <div id="top-content" class="center-content gray">
@@ -70,14 +71,15 @@
           </li>
         </ul>
       </div>
-    </div>
 
-
-
+   <div id="text-area">
 <%= yield %>
 
+</div>
 
-
+    <footer id="footer">
+      <div id="foot-content">
+        <div id="foot-logo"></div>
         <section id="footer-text">
           <p>That request which your computer sends to the web server contains all sorts of (potentially) interesting information. We'll now examine the HTTP request your computer just sent to this web server, see what it contains, and find out what it tells me about you.</p>
         </section>
@@ -96,6 +98,6 @@
       </div>
     </footer>
   </div>
-
+  </div>
 </body>
 </html>
