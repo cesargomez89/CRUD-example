@@ -1,0 +1,21 @@
+<%= form_for @articles do |f|  %>
+  <% if @articles.errors.any  %>
+    <h2>
+      <%= pluralize(@articles.errors.count, "error" )  %>
+      Prohibited this article from being saved
+    </h2>
+    <ul>
+      <% @articles.error.full_messages.each do |msg|  %>
+        <li><%= msg  %> </li>
+      <% end  %>
+    </ul>
+  <% end  %>
+  <%= f.label :title  %>
+  <%= f.text_field :title  %>
+  <br/>
+  <% end  %>
+  <%= f.label :content%>
+  <%= f.text_field :content%>
+  <br/>
+  <% f.submit %>
+<% end  %>
