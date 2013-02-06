@@ -1,0 +1,45 @@
+!!!
+%html
+  %head
+    %title CRUDHAML
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #container
+      #top-content
+        %header
+          %a
+            #logo
+        #menu
+          %nav
+            %ul
+              %li 
+              %li Articles
+              %li 
+              %li 
+              %li 
+        #social-menu
+          %a
+            #twitter
+          %a
+            #rss
+        #slider
+          %img
+          %ul.images-slider
+            %li
+              %figure
+                %img
+      #text-area
+        =yield
+      %footer
+        #foot-content
+          #foot-logo
+            %section#text-footer
+              %aside#footer-social
+                %ul
+                  %li
+                  %li
+                  %li
+        #copyright
+          %p
