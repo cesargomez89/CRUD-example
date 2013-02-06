@@ -26,6 +26,7 @@
                 <li>How It Works</li>
                 <li><%= link_to "Articles", articles_path, style: "color:white;text-decoration:none" %></li>
                 <li>Contact</li>
+                <li><a href="users/sign_in">Sign In</a></li>
               </ul>
             </nav>
           </div>
@@ -38,6 +39,8 @@
             </div>
           </div>
         </header>
+        <p class="notice"><%= notice %></p> 
+          <p class="alert"><%= alert %></p> 
         <div id="slider">
           <img src="/assets/slide-placeholder.png"/>
         </div>
