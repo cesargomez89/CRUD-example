@@ -14,3 +14,11 @@
 //= require libs/rails
 //= require libs/underscore
 //= require libs/backbone
+//= require initialize
+//= require app/collections/articles
+//= require app/views/index
+//= require router
+
+$(function(){
+  Blog.Initialize();
+});

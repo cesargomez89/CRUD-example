@@ -1,8 +1,13 @@
 class ArticlesController < ApplicationController
   def index
-    @articles= Article.all
+    if params[:limit].nil?
+      @articles = Article.all
+    else
+      @articles = Article.order('created_at DESC').limit(params[:limit])
+    end
     respond_to do |format|
       format.html
+      format.json { render json: @articles }
     end
   end
 
