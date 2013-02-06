@@ -11,25 +11,25 @@
         %header
           %a
             #logo
-        #menu
-          %nav
-            %ul
-              %li 
-              %li Articles
-              %li 
-              %li 
-              %li 
-        #social-menu
-          %a
-            #twitter
-          %a
-            #rss
+          #menu
+            %nav
+              %ul
+                %li Galery 
+                %li Articles
+                %li Blog 
+                %li About
+                %li contact
+          #social-menu
+            %a{:href=>"#"}
+              #twitter.social-icon
+            %a{:href=>"#"}
+              #rss.social-icon
         #slider
-          %img
-          %ul.images-slider
-            %li
-              %figure
-                %img
+          %img{:src=>"/assets/slide-placeholder.png"}
+            %ul.images-slider
+              %li
+                %figure
+                  %img{:src=>"/assets/avatar-small.png"}
       #text-area
         =yield
       %footer
