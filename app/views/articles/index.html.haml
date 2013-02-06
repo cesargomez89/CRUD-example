@@ -1,0 +1,13 @@
+%h1 Articles
+%table
+  %thead
+    %th Title
+    %th Content
+  %tbody
+    - @articles.each do |article|
+      %tr
+        %td= article.title
+        %td= article.content
+        %td= link_to "Edit", edit_article_path(article.id)
+        %td= link_to "Destroy", article_path(article.id),  method: "delete", confirm: "Are you sure?"
+= button_to "create new article", new_article_path, method: "get"
