@@ -11,6 +11,10 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def showarticle
+    @article = Article.find(params[:id])
+  end
+
   def new
     @article= Article.new
     respond_to do |format|
