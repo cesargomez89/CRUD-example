@@ -17,9 +17,10 @@ body {
   height:130px;
   overflow: hidden;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 #social-menu{
-  margin: -90px 0;
+  margin: -47px 40px;
   float: right;
   height: 45px;
   width: 90px;
@@ -47,14 +48,31 @@ body {
   color: white;
   margin: 0 0 0 40px;
   ul li{
-    margin: 75px 10px 0 30px;
+    margin: 75px 5px 0 5px;
   }
 }
 
 nav ul li, .images-slider li {
+  color: #1E90FF;
+  background:#F0F8FF;
   display: inline-block;
   cursor: pointer;
+  padding: 5px 25px;
+  border-radius: 15px;
+  opacity: .7;
+  -webkit-transition: opacity .9s ease-in-out;
+  -moz-transition: opacity .9s ease-in-out;
+  -o-transition: opacity .9s ease-in-out;
+  transition: opacity .9s ease-in-out;
 }
+
+nav ul li:hover {
+  text-decoration: none;
+  background: #1E90FF;
+  color:white;
+  opacity: 1;
+}
+
 
 #slider {
   text-align:left;
