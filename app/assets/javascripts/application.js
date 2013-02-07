@@ -12,13 +12,13 @@
 //
 //= require libs/jquery
 //= require libs/rails
+//= require bootstrap
 //= require libs/underscore
 //= require libs/backbone
 //= require initialize
-//= require app/collections/articles
-//= require app/views/index
+//= require_tree ./app/collections/
+//= require_tree ./app/views/
 //= require router
-//= require bootstrap
 
 $(function(){
   Blog.Initialize();
