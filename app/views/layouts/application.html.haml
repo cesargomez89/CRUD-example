@@ -6,8 +6,8 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #container
-      #top-content
+    #top-content
+      .container
         %header
           %a
             #logo
@@ -30,16 +30,19 @@
               %li
                 %figure
                   %img{:src=>"/assets/avatar-small.png"}
-      #text-area
+    #text-area
+      .container
         =yield
-      %footer
+    %footer
+      .container
         #foot-content
           #foot-logo
             %section#text-footer
+              %p Bootstrap Sleek, intuitive, and powerful front-end framework for faster and easier web development.
               %aside#footer-social
                 %ul
                   %li
                   %li
                   %li
         #copyright
-          %p
+          %p  all rights reserved 
