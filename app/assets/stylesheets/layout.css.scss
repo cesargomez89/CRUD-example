@@ -1,0 +1,112 @@
+$center:0 auto;
+$gray:#303030;
+$width-logo:455px;
+$height-logo:201px;
+
+body {
+  background: url(texture.png);
+  background-color: $gray;
+}
+
+
+#logo{
+  background: url(logos.png) no-repeat;
+  float:left;
+  text-align:left;
+  width:130px;
+  height:130px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#social-menu{
+  margin: -90px 0;
+  float: right;
+  height: 45px;
+  width: 90px;
+}
+
+.social-icon{
+  background: url(fancy-links.png) no-repeat;
+  float: left;
+  height:45px;
+  width:40px;
+  overflow: hidden;
+}
+
+#twitter{
+}
+
+#rss{
+  background-position: -45px 0;
+}
+
+#menu{ 
+  background: url(divider.png) no-repeat;
+  background-position: bottom;
+  text-align: left;
+  color: white;
+  margin: 0 0 0 40px;
+  ul li{
+    margin: 75px 10px 0 30px;
+  }
+}
+
+nav ul li, .images-slider li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#slider {
+  text-align:left;
+  margin: 0 auto 0 auto;
+  figure{
+  }
+}
+
+#text-area {
+  background-color: white;
+  margin:$center;
+}
+
+#logo-foot {
+  background: url(logo_footter.png) no-repeat;
+  height: 80px;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+#footer-text {
+  float:left;
+  height: 140px;
+  width: 420px;
+  margin: 0 auto;
+
+}
+
+#footer-social{
+  // float:left;
+  height: 140px;
+  width: 480px;
+  margin:0 auto;
+}
+
+#foot-content{
+  height: 140px;
+  width: 900px;
+  margin:0 auto;
+}
+#copy{
+  background:#444 ;
+  height:30px;
+  width:900px;
+  margin:0 auto;
+  margin-top:50px;
+}
+
+footer {
+  color:#999;
+  line-height:30px;
+  font-size:13px;
+}
