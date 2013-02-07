@@ -40,6 +40,10 @@
                 %li
                   %a{:href=>"/articles"} 
                     About 
+                - if user_signed_in?
+                  %li= link_to 'Sign out', destroy_user_session_path,  method: "delete"
+                - else
+                  %li= link_to "Sign in", new_user_session_path
             #social-menu
               %a{:href=>"http://www.twitter.com/"}
                 #twitter.social-icon
