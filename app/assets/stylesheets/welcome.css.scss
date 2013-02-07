@@ -1,99 +1,33 @@
-$center:0 auto;
-$gray:#303030;
-$width-logo:455px;
-$height-logo:201px;
-
-body {
-  background: url(texture.png);
-  margin: -16px 0 0 -1px;
-  font-family: "Helvetica", Arial;
-  background-color: $gray;
-}
-
-.container {
-  width:980px;
-  margin:$center;
-}
-
-#logo{
-  background: url(logos.png) no-repeat;
-  float:left;
-  text-align:left;
-  width:130px;
-  height:130px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-#social-menu{
-  margin: -40px 0;
-  float: right;
-  height: 45px;
-  width: 90px;
-}
-
-.social-icon{
-  background: url(fancy-links.png) no-repeat;
-  float: left;
-  height:45px;
-  width:40px;
-  overflow: hidden;
-}
-
-#twitter{
-}
-
-#rss{
-  background-position: -45px 0;
-}
-
-#menu{ 
-  background: url(divider.png) no-repeat;
-  background-position: bottom;
-  text-align: left;
-  color: white;
-  margin: 0 0 0 40px;
-  ul li{
-    margin: 75px 10px 0 30px;
-  }
-}
-
-nav ul li, .images-slider li {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.image-slider li figure {
-  text-align:left;
-  margin: 0 auto 0 auto;
-}
-
-#text-area {
-  background-color: white;
-  margin:$center;
-}
-
 .text-title {
   background: url(divider.png) no-repeat;
   background-position: bottom;
 }
 
 #text-section{
-  height: 450px;
+  // height: 460px;
+}
+
+.text-sections{
+  height: 400px;
+  width: 460px;
+  display: block;
+  text-align: left;
 }
 
 #section-left{
-  display: block;
-  position: relative;
-  text-align: left;
-  width: 470px;
+  // position: relative;
 }
 
 #section-right{
-  display: block;
-  position: relative;
-  text-align: left;
-  width: 440px;
-  margin: -390px 480px;
+  float: right;
+  display: inline-block;
+  margin: -400px 0px;
+}
+
+
+#text-button{
+  // float:right;
+  margin: 40px auto;
 }
 
 .gray-area{
@@ -103,6 +37,7 @@ nav ul li, .images-slider li {
   font-weight: bold;
   position:relative;
   -webkit-border-radius: 5px;
+  // @include box-shadow(red 2px 2px 10px); 
 }
 
 .gray-button {
@@ -111,7 +46,6 @@ nav ul li, .images-slider li {
 }
 
 #twitter-foot{
-  margin: 500px auto;
   padding: 10px 20px 10px 20px;
   text-align: center;
   display:block;
@@ -126,9 +60,9 @@ nav ul li, .images-slider li {
   background: url(twitter-bird.png);
 }
 
-#main-articles {
-margin: 200px auto; }
-
+#main-articles{
+  margin-top: 20px
+}
 
 #section-articles {
   width: 900px;
@@ -146,55 +80,16 @@ margin: 200px auto; }
   margin-left: 160px;
   width: 660px;
 }
-.img2-articles{
+
+.article-content{
+  width: 800px;
+}
+
+.lupe {
   background: url(fancy-links.png) no-repeat;
   width: 42px;
   height: 40px;
-  margin-top: -80px;
+  // margin-top: -40px;
   float: right;
   background-position: -84px;
-}
-
-#logo-foot {
-  background: url(logo_footter.png) no-repeat;
-  height: 80px;
-  width: 900px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: -20px;
-}
-
-#footer-text {
-  float:left;
-  height: 140px;
-  width: 420px;
-  margin: 0 auto;
-
-}
-
-#footer-social{
-  float:left;
-  height: 140px;
-  width: 480px;
-  margin:0 auto;
-}
-
-#foot-content{
-  height: 140px;
-  width: 900px;
-  margin:0 auto;
-}
-#copy{
-  background:#444 ;
-  height:30px;
-  width:900px;
-  margin:0 auto;
-  margin-top:50px;
-}
-
-footer {
-  color:#999;
-  height:500px;
-  line-height:30px;
-  font-size:13px;
 }

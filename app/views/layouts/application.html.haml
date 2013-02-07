@@ -9,26 +9,38 @@
     #top-content
       .container
         %header
-          %a
+          %a{:href=>"/"}
             #logo
           #menu
             %nav
-              %ul
-                %li Galery 
-                %li Articles
-                %li Blog 
-                %li About
-                %li contact
-          #social-menu
-            %a{:href=>"#"}
-              #twitter.social-icon
-            %a{:href=>"#"}
-              #rss.social-icon
+              %ul.nav.nav-pills
+                %li.active 
+                  %a{:href=>"/"}
+                    Home
+                %li 
+                  %a{:href=>"/galery"} 
+                    Galery
+                %li
+                  %a{:href=>"/articles"} 
+                    Articles
+                %li
+                  %a{:href=>"/articles"} 
+                    Blog 
+                %li
+                  %a{:href=>"/articles"} 
+                    About 
+            #social-menu
+              %a{:href=>"http://www.twitter.com/"}
+                #twitter.social-icon
+              %a{:href=>"#"}
+                #rss.social-icon
         #slider
-          %img{:src=>"/assets/slide-placeholder.png"}
-            %ul.images-slider
-              %li
-                %figure
+          %figure
+            %img{:src=>"/assets/slide-placeholder.png"}
+          .row-fluid
+            %ul.thumbnails
+              %li.span3
+                %a
                   %img{:src=>"/assets/avatar-small.png"}
     #text-area
       .container
@@ -37,12 +49,15 @@
       .container
         #foot-content
           #foot-logo
-            %section#text-footer
-              %p Bootstrap Sleek, intuitive, and powerful front-end framework for faster and easier web development.
-              %aside#footer-social
-                %ul
-                  %li
-                  %li
-                  %li
+          %section#text-footer
+            %p Bootstrap Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+            %aside#footer-social
+              %ul
+                %a{:href=>"#"}
+                  %li follow us
+                %a{:href=>"#"}
+                  %li follow us
+                %a{:href=>"#"}
+                  %li follow us
         #copyright
-          %p  all rights reserved 
+          %a{:href=>"http://www.tangosource.com"} Tango Source
