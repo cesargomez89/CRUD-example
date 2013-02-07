@@ -1,8 +1,19 @@
+
 $center:0 auto;
 $gray:#303030;
 $width-logo:455px;
 $height-logo:201px;
 
+
+
+#login{
+  float:right;
+  color: #FFF;
+  margin: 20px 30px 0 0;
+}
+#login a{
+ margin: 0 0 0 10px ;
+}
 body {
   background: url(texture.png);
   background-color: $gray;
