@@ -18,15 +18,5 @@
     %header
       %h1 Latest News Articles
     #section-articles
-      -@articles.each do |article|
-        .media
-          %a.pull-left
-            %img.media-object{:src=>"/assets/avatar-small.png"}
-          .media-body
-            %h4.media-heading=article.title
-          .article-content  
-            =article.content
-          %a{:href=>"#"}
-            .lupe
     %a{:href => "/articles"}
       %Button#text-button.btn.btn-inverse More articles

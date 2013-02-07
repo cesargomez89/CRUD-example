@@ -12,6 +12,3 @@
  *= require_self
  *= require_tree .
  */
- @import "bootstrap";
- @import "compass";
- @import "compass_twitter_bootstrap";
