@@ -34,8 +34,8 @@
                 #twitter.social-icon
               %a{:href=>"#"}
                 #rss.social-icon
-        %p .notice= notice
-        %p.alert= alert
+        - flash.each do |key, value|
+          = content_tag :div, value, :class => "flash alert alert-#{key}" unless value.blank?
         #slider
           %figure
             %img{:src=>"/assets/slide-placeholder.png"}
