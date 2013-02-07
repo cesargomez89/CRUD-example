@@ -82,7 +82,9 @@
 }
 
 .article-content{
-  width: 800px;
+  width: 650px;
+  height: 140px;
+  overflow: hidden;
 }
 
 .lupe {
@@ -92,4 +94,5 @@
   // margin-top: -40px;
   float: right;
   background-position: -84px;
+  margin: -10% 0 0 0;
 }
