@@ -4,13 +4,15 @@ $width-logo:455px;
 $height-logo:201px;
 
 body {
+  background: url(texture.png);
   margin: -16px 0 0 -1px;
   font-family: "Helvetica", Arial;
   background-color: $gray;
 }
 
-#content header{
-  height:50px;
+.container {
+  width:980px;
+  margin:$center;
 }
 
 #logo{
@@ -22,28 +24,25 @@ body {
   overflow: hidden;
   margin-bottom: 20px;
 }
-#socials{
-  display: block;
-
-  margin: -40px 0 0 875px;
-  //float: right;
+#social-menu{
+  margin: -40px 0;
+  float: right;
   height: 45px;
   width: 90px;
 }
-#social{
-  float: left;
+
+.social-icon{
   background: url(fancy-links.png) no-repeat;
-  width:45px;
+  float: left;
   height:45px;
+  width:40px;
   overflow: hidden;
 }
 
+#twitter{
+}
+
 #rss{
-  background: url(fancy-links.png) no-repeat;
-  float: left;
-  width:40px;
-  height:45px;
-  overflow: hidden;
   background-position: -45px 0;
 }
 
@@ -51,43 +50,25 @@ body {
   background: url(divider.png) no-repeat;
   background-position: bottom;
   text-align: left;
+  color: white;
   margin: 0 0 0 40px;
   ul li{
     margin: 75px 10px 0 30px;
   }
 }
 
-#content {
-  height: auto;
-  margin: $center;
-  background: url(textture.png);
-}
-
-#top-content {
-  color: #fff;
-}
-
-.center-content{
-  width:960px;
-  margin:$center;
-}
-
-
-#menu ul li, #header-social li, .avatars li  {
+nav ul li, .images-slider li {
   display: inline-block;
   cursor: pointer;
 }
 
-
-ul li figure {
+.image-slider li figure {
   text-align:left;
   margin: 0 auto 0 auto;
 }
 
-#main-content{
-  background-color:white;
-}
 #text-area {
+  background-color: white;
   margin:$center;
 }
 
@@ -115,14 +96,6 @@ ul li figure {
   margin: -390px 480px;
 }
 
-#button1{
-  margin: 400px 480px;
-}  
-
-#button2{
-  margin: 50px 400px;
-}  
-
 .gray-area{
   background-color: #c9c9c9;
   color: white;
@@ -138,13 +111,12 @@ ul li figure {
 }
 
 #twitter-foot{
-  margin: -320px auto;
+  margin: 500px auto;
   padding: 10px 20px 10px 20px;
   text-align: center;
   display:block;
   -webkit-border-radius: 5px;
 }
-
 
 #twit{
   width:38px;
