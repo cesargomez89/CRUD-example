@@ -7,19 +7,30 @@
     = csrf_meta_tags
   %body
     #top-content
+      %div#login
+        - if user_signed_in?
+          logged as  
+          %a= current_user.email
+          %a= link_to 'Sign out', destroy_user_session_path,  method: "delete", style: "color:white;text-decoration:none"
+        - else
+          %a= link_to "Sign in", new_user_session_path, style: "color: white; text-decoration: none"
+
       .container
         %header
           %a{:href=>"/"}
             #logo
           #menu
             %nav
-              %ul
-                %li
+              %ul.nav.nav-pills
+
+                %li.active 
                   %a{:href=>"/"}
                     Home
                 %li 
                   %a{:href=>"/galery"} 
                     Galery
+
+
                 %li
                   %a{:href=>"/articles"} 
                     Articles
@@ -29,10 +40,6 @@
                 %li
                   %a{:href=>"/articles"} 
                     About 
-                - if user_signed_in?
-                  %li= link_to 'Sign out', destroy_user_session_path,  method: "delete"
-                - else
-                  %li= link_to "Sign in", new_user_session_path
             #social-menu
               %a{:href=>"http://www.twitter.com/"}
                 #twitter.social-icon

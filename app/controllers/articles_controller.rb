@@ -1,4 +1,7 @@
 class ArticlesController < ApplicationController
+  
+  before_filter :authenticate_user!, :except => [:show, :index]
+
   def index
     if params[:limit].nil?
       @articles = Article.all
@@ -34,6 +37,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+
     @article = Article.find(params[:id])
   end
 
@@ -47,6 +51,7 @@ class ArticlesController < ApplicationController
         format.html {render action: "edit"}
       end
     end
+
   end
 
   def destroy 
