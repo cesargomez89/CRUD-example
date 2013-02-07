@@ -10,14 +10,10 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require libs/jquery
-//= require libs/rails
-//= require libs/underscore
-//= require libs/backbone
-//= require initialize
-//= require app/collections/articles
-//= require app/views/index
-//= require router
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+//= require bootstrap
 
 $(function(){
   Blog.Initialize();
