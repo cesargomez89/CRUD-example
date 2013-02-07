@@ -26,9 +26,10 @@
                 <li>How It Works</li>
                 <li><%= link_to "Articles", articles_path, style: "color:white;text-decoration:none" %></li>
                 <li>Contact</li>
-                <li><%= link_to "Sign in", new_user_session_path %></li>
 		<% if user_signed_in? %>
-                <li><%= link_to 'Sign out', destroy_user_session_path,  method: "delete", confirm: "Are you sure?" %></li>
+                  <li><%= link_to 'Sign out', destroy_user_session_path,  method: "delete", confirm: "Are you sure?", style: "color:white;text-decoration:none" %></li>
+                <% else %>
+                <li><%= link_to "Sign in", new_user_session_path, style: "color: white; text-decoration: none" %></li>
 		<% end %>
               </ul>
             </nav>
