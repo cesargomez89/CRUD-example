@@ -1,0 +1,10 @@
+%script{ class: 'fn-article-template', type: 'text/template' }
+  .media 
+    %a.pull-left
+      %img.media-object(src='/assets/avatar-small.png')
+    .media-body
+      %h4.media-heading
+        <%= article.title %>
+    .article-content
+      <%= article.content %>
+    %a.lupe(href='#')
