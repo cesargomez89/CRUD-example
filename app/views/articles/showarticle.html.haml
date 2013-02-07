@@ -1,0 +1,10 @@
+%h1 Articles
+%table
+  %thead
+    %th Title
+    %th Content
+  %tbody
+    %tr
+      %td= @article.title
+      %td= @article.content
+      %td= link_to "Back to articles", articles_path
