@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>CRUD-Example</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= link_to "Index", root_path %>
+  <%= link_to "Articles", articles_path %>
+
+    <div id="content">
+      <div id="top-content" class="center-content gray">
+        <header>
+          <a href="/">
+            <div id="logo">
+            </div>
+          </a>
+          <div id="menu">
+            <nav>
+              <ul>
+                <li>Website Templates</li>
+                <li>Design Templates</li>
+                <li>How It Works</li>
+                <li><%= link_to "Articles", articles_path, style: "color:white;text-decoration:none" %></li>
+                <li>Contact</li>
+                <li><%= link_to "Sign in", new_user_session_path %></li>
+                <li><%= link_to('Sign out', destroy_user_session_path,  :method => 'delete') "%></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="socials">
+            <a href="http://www.twitter.com">
+              <div id="social">
+              </div>
+            </a>
+            <div id="rss">
+            </div>
+          </div>
+        </header>
+        <p class="notice"><%= notice %></p> 
+          <p class="alert"><%= alert %></p> 
+        <div id="slider">
+          <img src="/assets/slide-placeholder.png"/>
+        </div>
+        <ul class="avatars">
+          <li>
+            <figure>
+              <img src="/assets/placeholder-avatar-small.png" alt="Imagen numero 1"/>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="/assets/placeholder-avatar-small.png" alt="Imagen numero 1"/>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="/assets/placeholder-avatar-small.png" alt="Imagen numero 1"/>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="/assets/placeholder-avatar-small.png" alt="Imagen numero 1"/>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="/assets/placeholder-avatar-small.png" alt="Imagen numero 1"/>
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+   <div id="text-area">
+<%= yield %>
+
+</div>
+
+    <footer id="footer">
+      <div id="foot-content">
+        <div id="foot-logo"></div>
+        <section id="footer-text">
+          <p>That request which your computer sends to the web server contains all sorts of (potentially) interesting information. We'll now examine the HTTP request your computer just sent to this web server, see what it contains, and find out what it tells me about you.</p>
+        </section>
+        <aside id="footer-social">
+          <ul>
+            <li class="social-list">follow us</li>
+            <li class="social-list">follow us</li>
+            <li class="social-list">follow us</li>
+          </ul>
+        </aside>
+      </div>
+      <div id="copy">
+        <p>
+          Copyright 2013 TEAM-1 company - Todos los derechos reservados.   |   <a href="index.html">__    www.team-1.com   __ </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  </div>
+</body>
+</html>
