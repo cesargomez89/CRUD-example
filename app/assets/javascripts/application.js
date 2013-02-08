@@ -16,6 +16,7 @@
 //= require libs/underscore
 //= require libs/backbone
 //= require initialize
+//= require_tree ./app/models/
 //= require_tree ./app/collections/
 //= require_tree ./app/views/
 //= require router
