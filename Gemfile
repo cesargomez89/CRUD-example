@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
-gem 'sqlite3'
+gem 'newrelic_rpm'
 
 gem 'haml'
 gem 'devise'
@@ -15,3 +15,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
 end
+
+group :production do
+  gem 'pg'
+end   
+
+group :development, :test  do
+    gem 'sqlite3'
+    gem 'mailcatcher'
+end
+
+
